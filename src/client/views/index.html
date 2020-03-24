@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel Planner</title>
+        <meta
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+            name="viewport" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Travel Planner</h1>                
+            </header>
+            <nav>
+                <div class="saved-trips-selection">
+                    <label for="saved-trips">My Saved Trips:</label>
+                    <select id="saved-trips" class="saved-trips">
+                    </select>
+                </div>
+                <button type="button" id="add-trip" class="add-trip-button btn">+ Add Trip</button>
+            </nav>
+            <div class="location-pic">
+                <img class="location-img" id="location-pix" src="/src/client//media/take-off-pic.jpg">
+            </div>
+            <div class="trip-card">
+                <section>
+                    <div class="trip-heading" id="trip-location">My trip to: </div>
+                    <div class="trip-heading" id="trip-date">Departing:</div>
+                    <div class="trip-days" id="days-away"></div>
+                    <div class="trip-weather-card">
+                        <div class="trip-weather-text">Typical weather during that time:</div>
+                        <div class="trip-weather" id="trip-temps"></div>
+                        <div class="trip-weather" id="trip-type"></div>
+                    </div>
+                    <div class="trip-buttons">
+                        <button type="button" id="save-trip" class="btn">Save Trip</button>
+                        <button type="button" id="remove-trip" class="btn">Remove Trip</button>
+                    </div>
+                </section>
+            </div>
+            <footer>
+            </footer>
+        </div>
+
+        <!-- Add Trip Modal -->
+        <div id="add-trip-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Add New Trip</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="trip-country">Country: </label>
+                    <input class="modal-input" id="trip-country" name="trip-country" type="text"></input>
+                    <label for="trip-city">City:</label>
+                    <input class="modal-input" id="trip-city" name="trip-city" type="text"></input>
+                    <div id="div-trip-state">
+                        <label for="trip-state">State: </label>
+                        <input class="modal-input" id="trip-state" name="trip-state" type="text"></input>
+                    </div>
+                    <label for="trip-departure-date">Date you depart:</label>
+                    <input class="modal-input" id="trip-departure-date" name="trip-departure-date"></input>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="trip-submit" class="submit-button">Submit</button>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>

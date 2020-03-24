@@ -1,0 +1,6 @@
+# ignore local enviroment variables
+.env
+
+# ignore working directories
+node_modules
+dist
